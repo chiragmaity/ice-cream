@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Scoopice</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            text-align: center;
+            color: #111;
+            background-color: white;
+        }
+
+        header {
+            padding: 35px 15px;
+        }
+
+        .logo {
+            font-size: 65px;
+            font-weight: bold;
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+
+        .logo span {
+            color: red;
+        }
+
+        .logo-icon {
+            display: block;
+            font-size: 45px;
+            margin-bottom: -10px;
+            font-style: normal;
+        }
+
+        nav {
+            margin-top: 35px;
+        }
+
+        nav a {
+            color: #35105c;
+            font-size: 24px;
+            margin: 0 12px;
+        }
+
+        .about {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .about h1 {
+            font-size: 48px;
+            margin-bottom: 35px;
+        }
+
+        .about p {
+            font-size: 22px;
+            line-height: 1.9;
+            margin-bottom: 25px;
+        }
+
+        .about img {
+            width: 80%;
+            max-width: 800px;
+            height: 400px;
+            object-fit: cover;
+            margin: 20px auto 35px;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: red;
+            color: white;
+            padding: 18px 35px;
+            font-size: 22px;
+            text-decoration: none;
+            margin: 20px;
+        }
+
+        footer {
+            width: 80%;
+            margin: 40px auto 0;
+            padding: 25px 0;
+            border-top: 2px solid #aaa;
+            font-size: 22px;
+            font-style: italic;
+        }
+
+        @media (max-width: 700px) {
+            .logo {
+                font-size: 48px;
+            }
+
+            nav a {
+                font-size: 17px;
+                margin: 0 5px;
+            }
+
+            .about h1 {
+                font-size: 34px;
+            }
+
+            .about p {
+                font-size: 18px;
+            }
+
+            .about img {
+                width: 100%;
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="logo-icon">🌞</span>
+            Scoop<span>ice</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#services">Services</a>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h1>About Scoopice</h1>
+
+        <img
+            src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=85"
+            alt="Delicious ice cream">
+
+        <p>
+            Welcome to Scoopice, where every scoop brings a smile!
+            We believe that simple, natural ingredients make the
+            best ice cream.
+        </p>
+
+        <p>
+            Our ice cream is lovingly prepared in small batches
+            using fresh ingredients and delicious flavours.
+            We want every visit to be a sweet adventure filled
+            with happiness, taste, and unforgettable memories.
+        </p>
+
+        <p>
+            From classic favourites to exciting new flavours,
+            there is something special for everyone at Scoopice.
+            Come and discover your favourite scoop!
+        </p>
+
+        <a href="index.html" class="back-button">Back to Home</a>
+    </section>
+
+    <footer>
+        &copy; All rights reserved.
+    </footer>
+
+</body>
+</html>

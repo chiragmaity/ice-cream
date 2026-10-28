@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Scoopice</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            color: #111;
+            background-color: white;
+            text-align: center;
+        }
+
+        /* Header and Logo */
+        header {
+            padding: 35px 15px;
+        }
+
+        .logo {
+            font-size: 65px;
+            font-weight: bold;
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+
+        .logo span {
+            color: red;
+        }
+
+        .logo-icon {
+            display: block;
+            font-size: 45px;
+            margin-bottom: -10px;
+            font-style: normal;
+        }
+
+        /* Navigation */
+        nav {
+            margin-top: 35px;
+        }
+
+        nav a {
+            color: #35105c;
+            font-size: 24px;
+            margin: 0 12px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 35px 20px 55px;
+        }
+
+        .services h1 {
+            font-size: 48px;
+            margin-bottom: 25px;
+        }
+
+        .services p {
+            font-size: 22px;
+            line-height: 1.8;
+            margin: 0 auto 35px;
+            max-width: 900px;
+        }
+
+        .services video {
+            display: block;
+            width: 80%;
+            max-width: 1100px;
+            height: auto;
+            margin: 0 auto 35px;
+            background-color: black;
+        }
+
+        /* Service Cards */
+        .service-list {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin: 40px auto;
+            max-width: 1100px;
+        }
+
+        .service-card {
+            border: 1px solid #ddd;
+            padding: 25px;
+            width: 300px;
+        }
+
+        .service-card h2 {
+            color: red;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        /* Home Button */
+        .back-button {
+            display: inline-block;
+            background-color: red;
+            color: white;
+            padding: 18px 35px;
+            font-size: 22px;
+            text-decoration: none;
+            margin: 20px;
+        }
+
+        /* Footer */
+        footer {
+            width: 80%;
+            margin: 30px auto 0;
+            padding: 25px 0;
+            border-top: 2px solid #aaa;
+            font-size: 22px;
+            font-style: italic;
+        }
+
+        /* Mobile Design */
+        @media (max-width: 700px) {
+            .logo {
+                font-size: 48px;
+            }
+
+            nav a {
+                font-size: 17px;
+                margin: 0 5px;
+            }
+
+            .services h1 {
+                font-size: 35px;
+            }
+
+            .services p {
+                font-size: 18px;
+            }
+
+            .services video {
+                width: 100%;
+            }
+
+            .service-card {
+                width: 100%;
+            }
+
+            footer {
+                width: 90%;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <span class="logo-icon">🌞</span>
+            Scoop<span>ice</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+        </nav>
+    </header>
+
+    <!-- Services Content -->
+    <section class="services">
+        <h1>Our Services</h1>
+
+        <p>
+            At Scoopice, we make every ice cream experience
+            special with delicious flavours, fresh ingredients,
+            and friendly service.
+        </p>
+
+        <!-- Replace this filename with your own video -->
+        <video controls
+            poster="poster image1.png">
+
+            <source src="video1.mp4" type="video/mp4">
+
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Service Cards -->
+        <div class="service-list">
+
+            <div class="service-card">
+                <h2>Fresh Ice Cream</h2>
+                <p>
+                    Enjoy delicious ice cream made with
+                    carefully selected ingredients.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h2>Special Flavours</h2>
+                <p>
+                    Discover classic favourites and
+                    exciting new ice cream flavours.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h2>Party Orders</h2>
+                <p>
+                    Make birthdays and special occasions
+                    sweeter with ice cream treats.
+                </p>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="back-button">
+            Back to Home
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; All rights reserved.
+    </footer>
+
+</body>
+</html>

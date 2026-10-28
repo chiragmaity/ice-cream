@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoopice - Ice Cream</title>
+
+    <style>
+        /* Basic page design */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            color: #111;
+            background-color: white;
+            text-align: center;
+        }
+
+        /* Header and logo */
+        header {
+            padding: 35px 15px 20px;
+        }
+
+        .logo {
+            font-size: 65px;
+            font-weight: bold;
+            font-style: italic;
+            margin-bottom: 45px;
+        }
+
+        .logo span {
+            color: red;
+        }
+
+        .logo-icon {
+            display: block;
+            font-size: 45px;
+            margin-bottom: -10px;
+            font-style: normal;
+        }
+
+        /* Navigation menu */
+        nav {
+            margin-bottom: 45px;
+        }
+
+        nav a {
+            color: #35105c;
+            font-size: 25px;
+            margin: 0 12px;
+        }
+
+        /* Home section */
+        .home {
+            padding: 0 20px 65px;
+        }
+
+        .home h1 {
+            font-size: 48px;
+            margin-bottom: 50px;
+        }
+
+        .home p {
+            font-size: 27px;
+            line-height: 1.9;
+            margin-bottom: 45px;
+        }
+
+        .read-more {
+            display: inline-block;
+            background-color: red;
+            color: white;
+            font-size: 27px;
+            padding: 20px 55px;
+        }
+
+        /* Flavours section */
+        .flavours {
+            padding: 45px 0 60px;
+        }
+
+        .flavours h2,
+        .services h2 {
+            font-size: 48px;
+            margin-bottom: 45px;
+        }
+
+        .flavour-images {
+            display: flex;
+            gap: 6px;
+            width: 100%;
+        }
+
+        .flavour-images img {
+            width: calc(33.333% - 4px);
+            height: 430px;
+            object-fit: cover;
+        }
+
+        /* Services section */
+        .services {
+            padding: 35px 20px 50px;
+        }
+
+        .services video {
+            display: block;
+            width: 80%;
+            max-width: 1100px;
+            height: auto;
+            margin: 0 auto;
+            background-color: black;
+        }
+
+        /* Footer */
+        footer {
+            width: 80%;
+            margin: 0 auto;
+            padding: 25px 0;
+            border-top: 2px solid #aaa;
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 700px) {
+            .logo {
+                font-size: 48px;
+            }
+
+            nav a {
+                font-size: 18px;
+                margin: 0 6px;
+            }
+
+            .home h1,
+            .flavours h2,
+            .services h2 {
+                font-size: 32px;
+            }
+
+            .home p {
+                font-size: 18px;
+            }
+
+            .flavour-images {
+                flex-direction: column;
+                padding: 0 15px;
+            }
+
+            .flavour-images img {
+                width: 100%;
+                height: 300px;
+            }
+
+            .services video {
+                width: 100%;
+            }
+
+            footer {
+                width: 90%;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header and Logo -->
+    <header>
+        <div class="logo">
+            <span class="logo-icon">🌞</span>
+            Scoop<span>ice</span>
+        </div>
+
+        <!-- Navigation -->
+
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+        </nav>
+
+
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <h1>A new adventure in ice cream</h1>
+
+        <p id="about">
+            We believe that simple nature food tastes best.<br>
+            Our ice cream is lovingly handmade in small batches in the<br>
+            heart using only simple, natural and fresh local ingredients
+            of adventure and discovery.
+        </p>
+
+        <a href="#flavours" class="read-more">Read more</a>
+    </section>
+
+    <!-- Ice Cream Flavours -->
+    <section class="flavours" id="flavours">
+        <h2>Our core flavours</h2>
+
+        <div class="flavour-images">
+
+            <!-- Image 1: Change this image URL -->
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=85"
+                alt="Delicious ice cream">
+
+            <!-- Image 2: Change this image URL -->
+            <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=900&q=85"
+                alt="Ice cream cone">
+
+            <!-- Image 3: Change this image URL -->
+            <img src="poster image1.png"
+                alt="Ice cream dessert">
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- <section class="services" id="services"> -->
+        <!-- <h2>Services</h2> -->
+
+        <!-- Put your own video in this folder and name it icecream-video.mp4 -->
+        <video controls
+            poster="poster image1.png">
+            <source src="video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; All rights reserved.
+    </footer>
+
+</body>
+
+</html>
